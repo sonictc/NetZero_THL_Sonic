@@ -1,0 +1,6 @@
+Name: Meters
+Type: FolderType
+Children:
+- File: Power/Power.yaml
+- File: General/General.yaml
+- File: Counter/Counter.yaml

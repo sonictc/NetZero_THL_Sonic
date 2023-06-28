@@ -1,0 +1,10 @@
+Name: Template
+Type: FolderType
+Children:
+- File: PowerMeter/PowerMeter.yaml
+- File: GeneralMeter/GeneralMeter.yaml
+- File: CounterMeter/CounterMeter.yaml
+- File: Untility/Untility.yaml
+- File: Widget/Widget.yaml
+- File: Devices/Devices.yaml
+- File: Report/Report.yaml

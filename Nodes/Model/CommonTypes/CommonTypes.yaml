@@ -1,0 +1,147 @@
+Name: CommonTypes
+Type: FolderType
+Children:
+- Name: TimeInterval
+  Id: g=ccb5a908f976bf60f62e2066074a5f0c
+  Supertype: BaseObjectType
+  Children:
+  - Name: Beused
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: StartTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: EndTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: Working
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: WorkingTransitioned
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 1.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../Working"
+  - Name: WorkingTransitioned1
+    Type: VariableTransitionEventDispatcher
+    Children:
+    - Name: Value
+      Type: BaseVariableType
+      DataType: Double
+      Value: 0.0
+    - Name: Transition
+      Type: BaseVariableType
+      DataType: VariableTransition
+      Value: 0
+    - Name: VariableNodePath
+      Type: BaseVariableType
+      DataType: NodePath
+      Value: "../Working"
+  - Name: RateToCost
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: ID
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: ClockLogic
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Id: g=062e88ea1219a13c28a769556042110d
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: UTCTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: TestMode
+    Id: g=12b676b5b3f9befc9c4fb13f98840115
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: WeekOfYear
+    Id: g=6d13fcdd8f1be3a07aa887b0803af3c1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Year
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Month
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Day
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: YearRecords
+  Type: BaseObjectType
+  Children:
+  - Name: Jan
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 1.0
+  - Name: Feb
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 2.0
+  - Name: Mar
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 3.0
+  - Name: Apr
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 4.0
+  - Name: May
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 5.0
+  - Name: Jun
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 6.0
+  - Name: Jul
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 7.0
+  - Name: Aug
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 8.0
+  - Name: Sep
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 9.0
+  - Name: Oct
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 10.0
+  - Name: Nov
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 11.0
+  - Name: Dec
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 12.0
